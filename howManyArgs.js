@@ -1,8 +1,17 @@
 // Create a function howManyArgs which returns the total amount of arguments passed to it.
 // Example: passing 3 arguments when calling the function should return the number 3, passing 15 arguments should return the umber 15
 
-const howManyArgs = () => {};
+const howManyArgs = (...arg) => {
+    return arg.length
+};
 
 console.log(howManyArgs()); // -> 0
 console.log(howManyArgs(1, false, "hello")); // -> 3
 console.log(howManyArgs("better")); // -> 1
+
+/* let numbers=[1,2,3,4]
+Math.max(...numbers)  // Math.min(1,2,3,4) */
+
+// let numbers=[1,2,3,4]
+
+// let copyNumbers = [ ...numbers ] // [1,2,3,4]

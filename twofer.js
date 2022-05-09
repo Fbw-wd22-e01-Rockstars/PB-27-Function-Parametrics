@@ -1,7 +1,13 @@
 // Complete the function below so that it returns "Two for me and one for you" when no arguments are passed
 
-const twofer = who => {
+/* const twofer = (who="you") => {
   return `Two for me and one for ${who}`;
+};
+ */
+const twofer = (who) => {
+ /*  return who ? `Two for me and one for ${who}`: `Two for me and one for you`; */
+
+  return `Two for me and one for ${who? who : "you"}`;
 };
 
 console.log(twofer("Fran")); // -> "Two for me and one for Fran"
